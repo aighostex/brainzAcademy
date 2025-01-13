@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" type="image/png" sizes="" href="./assets/Rectangle 8.png">
+    <title>{% block title %} Brainz Academy {% endblock %}</title>
+</head>
+<body>
+    <main class="container">
+    <header class="nav">
+        <div class="logo"><a href="index.html"><img src="static/assets/WhatsApp Image 2024-06-12 at 22.18.03 (1).png" alt="" srcset=""></a></div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="http://">About</a></li>
+            <li><a href="{{url_for('past_papers.get_past_papers_list')}}">Past Papers</a></li>
+            <li><a href="http://">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    </main>
+   
+    <div>
+        {% block content %}
+        <h1>Welcome to BrainzAcademy</h1>
+        {% endblock %}
+    </div>
+
+</body>
+</html>

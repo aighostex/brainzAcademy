@@ -1,0 +1,58 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: rgb(134, 155, 213);
+    justify-content: center;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+}
+img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin: auto 1rem;
+}
+.logo{
+    padding-left: 10px;
+}
+.container{
+    margin: 10px auto;
+    padding: 20px; 
+    display: grid;
+    gap: 1.5rem;
+}
+.navigation ul {
+    margin: 0;
+    padding-right: 20px;
+    display: flex;
+}
+.navigation ul li {
+    list-style: none;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem;
+    padding-right: 4rem;
+    display: inline-block;
+}
+.navigation li a:hover{
+    color: rgb(66, 44, 174);
+}
