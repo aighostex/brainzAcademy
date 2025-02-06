@@ -1,1 +1,1 @@
-# brainzAcademy
+# BrainzAcademy
