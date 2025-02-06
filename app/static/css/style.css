@@ -6,9 +6,9 @@
     padding: 0;
 }
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 15px;
-    background-color: rgb(134, 155, 213);
+    background-color: #ececec;
     justify-content: center;
     line-height: 1.5rem;
     text-align: center;
@@ -17,7 +17,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(30px);
+    background-color: #fff;
+    /* backdrop-filter: blur(30px); */
     box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255, 255, 255, 0.18);
     border-radius: 5px;
@@ -48,11 +49,13 @@ img{
 }
 .navigation ul li a {
     text-decoration: none;
-    color: #fff;
+    font-family: 'cabin', sans-serif;
+    font-weight: 400;
+    color: #3f4196;
     padding: 2rem;
     padding-right: 4rem;
     display: inline-block;
 }
 .navigation li a:hover{
-    color: rgb(66, 44, 174);
+    color: #000000;
 }

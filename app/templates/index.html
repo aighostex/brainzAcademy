@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
-    <link rel="icon" type="image/png" sizes="" href="./assets/Rectangle 8.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicon-16x16.png">
+    <link rel="manifest" href="static/assets/site.webmanifest">
     <title>{% block title %} Brainz Academy {% endblock %}</title>
 </head>
 <body>
     <main class="container">
     <header class="nav">
-        <div class="logo"><a href="index.html"><img src="static/assets/WhatsApp Image 2024-06-12 at 22.18.03 (1).png" alt="" srcset=""></a></div>
+        <div class="logo"><a href="/"><img src="static/assets/WhatsApp Image 2024-06-12 at 22.18.03 (1).png" alt="" srcset=""></a></div>
     <nav class="navigation">
         <ul>
-            <li><a href="http://">About</a></li>
+            <li><a href="{{url_for('about.get_about')}}">About</a></li>
             <li><a href="{{url_for('past_papers.get_past_papers_list')}}">Past Papers</a></li>
-            <li><a href="http://">Contact</a></li>
+            <li><a href="{{url_for('contact.get_contact')}}">Contact</a></li>
         </ul>
     </nav>
     </header>
@@ -23,9 +26,11 @@
    
     <div>
         {% block content %}
-        <h1>Welcome to BrainzAcademy</h1>
+
         {% endblock %}
     </div>
-
+    <footer class="footer">
+       
+    </footer>
 </body>
 </html>
